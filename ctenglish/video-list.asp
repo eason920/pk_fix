@@ -38,7 +38,7 @@ sql = sql & "ORDER BY v.gp ASC, v.v_time DESC "
 'Session("pageSqlStrV") = sql
 Set vrs = GetMdb(mainDBPath,sql)
 vrsCount = vrs.RecordCount
-pg = pages(vrs, 6)
+pg = pages(vrs, 12)
 
 
 'videoTypes

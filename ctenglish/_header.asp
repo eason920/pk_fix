@@ -1,5 +1,35 @@
 
 <div id="fb-root"></div>
+<style>
+  /* body */
+  .breadcrumbs + .nk-box {
+    background-image: url(./assets/images/four_color_icon.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  /* all */
+  .nk-navbar .dropdown a{
+    border-bottom: solid 2px #f1a930;
+  }
+
+  /* mb */
+  .nk-navbar-side .dropdown li{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .nk-navbar-side .dropdown li:first-child a{
+    border: none;
+  }
+
+  @media screen and (max-width: 767px){
+    /* body */
+    .breadcrumbs + .nk-box {
+      background-size: 50%;
+    }
+  }
+</style>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -77,7 +107,6 @@ lefirskCount = lefirsk.RecordCount
 
 Dim inmqrs, inmarq_url, inmqrs_count
 If blockHeader = "1" Then		'Header No.1 ----------------------------------------------------------- >> %>
-
   <header id="Header01" class="nk-header <% If PathNow = "default.asp" Or PathNow = "index.asp" Then %>homepage<% End If %>">
     <!-- #include file="_topTyper.asp" -->
     <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-autohide">
